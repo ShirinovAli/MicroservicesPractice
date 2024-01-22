@@ -11,10 +11,14 @@ namespace FreeCourse.Services.Catalog.Mappings
             CreateMap<Category, CategoryDto>().ReverseMap();
             CreateMap<Category, CategoryCreateDto>().ReverseMap();
             CreateMap<Category, CategoryUpdateDto>().ReverseMap();
+            CreateMap<CategoryCreateDto, CategoryDto>().ReverseMap();
 
             CreateMap<Course, CourseDto>().ReverseMap();
             CreateMap<Course, CourseCreateDto>().ReverseMap();
             CreateMap<Course, CourseUpdateDto>().ReverseMap();
+            CreateMap<CourseCreateDto, CourseDto>().ReverseMap();
+
+            CreateMap<Feature, FeatureDto>().ReverseMap();
         }
     }
 }
